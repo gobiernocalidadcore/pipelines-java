@@ -27,3 +27,12 @@ steps:
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/site/jacoco'
     failIfCoverageEmpty: true
+    additionalCodeCoverageFiles: 
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'prueba'
